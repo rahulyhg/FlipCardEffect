@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        section{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-top: 200px;
+        }
+        .wrapped-card {
+            width: 250px;
+            height: 308px;
+            display: inline-block;
+            background: rgb(239, 245, 247);
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(66, 64, 64, 0.2);
+        }
+
+        .wrapped-card > .top-card {
+            width: 100%;
+            height: auto;
+        }
+       .wrapped-card > .bottom-card {
+            width: 100%;
+            height: 330px;
+          
+            transition: all 0.5s cubic-bezier(.93, .09, .45, 1.05);
+            opacity: 0;
+            padding-left: 20px;
+            font-family: 'Raleway', sans-serif;
+            background: rgb(109, 182, 241);
+        }
+    li{
+        list-style-type: none;
+    }
+
+        .wrapped-card:hover .bottom-card {
+            transform: translate(0, -73%);
+            opacity: 1;
+        }
+
+        .wrapped-card > .bottom-card > a {
+            font-size: 15px;
+            color: rgb(119, 70, 255);
+        }
+
+        .wrapped-card > .bottom-card>a>i {
+            opacity: 0;
+            transition: all 0.5s linear;
+
+        }
+        .wrapped-card > .top-card >.fas {
+            font-size: 60px;
+            margin-top: 30px;
+            display: block;
+            color: rgb(174, 210, 243);
+        }
+        .wrapped-card>* {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .wrapped-card > .top-card {
+            text-align: center;
+        }
+        .wrapped-card > .top-card>h4 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 0.4px;
+            color: rgb(66, 64, 64);
+            font-weight: 500;
+        }
+        .wrapped-card > .top-card>p {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.4px;
+
+        }
+
+        .bottom-card > ul > li > a > .fas,
+        .bottom-card > ul > li > a > .fab {
+            color: white;
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        .bottom-card > ul > li{
+            padding-top: 10%;
+        }
+       
+        .bottom-card > ul > li > a:hover{
+            color: rgb(88, 105, 255);
+        }
+        .bottom-card > ul > li > a{
+            color: white;
+         
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="wrapped-card">
+            <div class="top-card">
+                <i class="fas fa-globe-americas"></i>
+                <h4>Strategy & Analytics</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nesciunt consequatur dolores dolorem
+                    atque incidunt.
+                </p>
+            </div>
+            <div class="bottom-card">
+                <ul>
+                    <li>
+
+                        <a href="">
+                            <i class="fab fa-android"></i>
+                            <span> Digital Strategy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-atlas"></i>
+                            <span>Digital Production</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-database"></i>
+                            <span>Customer Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="">
+                            <i class="fab fa-codepen"></i>
+                            <span>Event action</span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="">
+                            <i class="fab fa-buysellads"></i>
+                            <span>Intergated campaign</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     
+    </section>
+ 
+</body>
+
+</html>
